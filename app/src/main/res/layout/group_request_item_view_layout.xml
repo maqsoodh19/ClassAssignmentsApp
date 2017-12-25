@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="6dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:padding="7dp">
+
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="0dp"
+        android:background="#f5bab7b2"
+        android:hapticFeedbackEnabled="true">
+
+
+        <TextView
+            android:id="@+id/txt_groupRequest_stdName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:text="Student name"
+            android:textColor="#f3fefeff"
+            android:textStyle="italic|bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_groupRequest_grpName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:padding="2dp"
+            android:text="Group name"
+            android:textColor="#f3fefeff"
+            android:textStyle="italic|bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_groupRequest_stdName" />
+
+        <Button
+            android:id="@+id/btn_groupRequest_reject"
+            android:layout_width="86dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#b74f5b"
+            android:text="Reject"
+            android:textColor="#f3fefeff"
+            android:textSize="13sp"
+            android:textStyle="italic|bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_groupRequest_accept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#4fb752"
+            android:textSize="13sp"
+            android:text="Accept"
+            android:textColor="#f3fefeff"
+            android:textStyle="italic|bold"
+            app:layout_constraintEnd_toStartOf="@+id/btn_groupRequest_reject"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>

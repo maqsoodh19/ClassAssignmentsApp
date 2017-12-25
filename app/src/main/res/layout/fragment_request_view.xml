@@ -1,0 +1,32 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="@color/primaryLightColor"
+    tools:context="com.example.maqso.classassignmentsapp.Fragments.RequestViewFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.v7.widget.RecyclerView
+    android:id="@+id/requestRecyclerView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    >
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/txt_fragment_request_no_req"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="250dp"
+        android:textColor="@color/white"
+        android:text="No New Notification"
+        android:textSize="18sp"
+        android:textStyle="italic|bold"
+        android:visibility="invisible"
+
+        />
+
+</FrameLayout>
